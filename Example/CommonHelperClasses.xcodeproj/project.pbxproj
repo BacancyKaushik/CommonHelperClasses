@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		164AF99CEA371F23D84BFF10 /* Pods-CommonHelperClasses_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonHelperClasses_Example.release.xcconfig"; path = "Target Support Files/Pods-CommonHelperClasses_Example/Pods-CommonHelperClasses_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2013B9EE139275A87A79B044 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2013B9EE139275A87A79B044 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		365CFB1A6D9D69BE2D2A2632 /* Pods-CommonHelperClasses_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonHelperClasses_Example.debug.xcconfig"; path = "Target Support Files/Pods-CommonHelperClasses_Example/Pods-CommonHelperClasses_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CommonHelperClasses_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonHelperClasses_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,8 +45,8 @@
 		8671294B80E9C8EB47BC2031 /* Pods-CommonHelperClasses_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonHelperClasses_Tests.release.xcconfig"; path = "Target Support Files/Pods-CommonHelperClasses_Tests/Pods-CommonHelperClasses_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B76BC0BC7409C646E342C30D /* Pods_CommonHelperClasses_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonHelperClasses_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63F7DC65B4B1C5267F2ED2E /* Pods-CommonHelperClasses_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonHelperClasses_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CommonHelperClasses_Tests/Pods-CommonHelperClasses_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D9EBAC1DBABED08E2EC38429 /* CommonHelperClasses.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CommonHelperClasses.podspec; path = ../CommonHelperClasses.podspec; sourceTree = "<group>"; };
-		EDA07880D2DD28B4F38AA3F6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D9EBAC1DBABED08E2EC38429 /* CommonHelperClasses.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CommonHelperClasses.podspec; path = ../CommonHelperClasses.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EDA07880D2DD28B4F38AA3F6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,6 @@
 				D63F7DC65B4B1C5267F2ED2E /* Pods-CommonHelperClasses_Tests.debug.xcconfig */,
 				8671294B80E9C8EB47BC2031 /* Pods-CommonHelperClasses_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,11 +291,27 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CommonHelperClasses_Example/Pods-CommonHelperClasses_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CommonHelperClasses/CommonHelperClasses.framework",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/NextGrowingTextView/NextGrowingTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonHelperClasses.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EzPopup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NextGrowingTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -1,0 +1,13 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ActionSheetPicker-3.0" "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/EzPopup" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/NextGrowingTextView" "${PODS_CONFIGURATION_BUILD_DIR}/ReachabilitySwift" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/TextFieldEffects"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/EzPopup/EzPopup.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NextGrowingTextView/NextGrowingTextView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ReachabilitySwift/Reachability.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TextFieldEffects/TextFieldEffects.framework/Headers"
+LIBRARY_SEARCH_PATHS = $(inherited) $(SDKROOT)/usr/lib/swift
+OTHER_LDFLAGS = $(inherited) -l"swiftCoreGraphics" -framework "ActionSheetPicker_3_0" -framework "Alamofire" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreTelephony" -framework "EzPopup" -framework "Foundation" -framework "IQKeyboardManagerSwift" -framework "ImageIO" -framework "MBProgressHUD" -framework "NextGrowingTextView" -framework "QuartzCore" -framework "Reachability" -framework "SDWebImage" -framework "SystemConfiguration" -framework "TextFieldEffects" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

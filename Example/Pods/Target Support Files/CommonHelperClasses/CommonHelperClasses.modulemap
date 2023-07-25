@@ -1,0 +1,6 @@
+framework module CommonHelperClasses {
+  umbrella header "CommonHelperClasses-umbrella.h"
+
+  export *
+  module * { export * }
+}

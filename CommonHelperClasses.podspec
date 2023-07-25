@@ -21,22 +21,32 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/kaushik/CommonHelperClasses'
+  s.homepage         = 'https://github.com/BacancyKaushik/CommonHelperClasses'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'kaushik' => 'kaushik.movaliya@bacancy.com' }
-  s.source           = { :git => 'https://github.com/kaushik/CommonHelperClasses.git', :tag => s.version.to_s }
+  s.author           = { 'BacancyKaushik' => 'kaushik.movaliya@bacancy.com' }
+  s.source           = { :git => 'https://github.com/BacancyKaushik/CommonHelperClasses.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
+  
+  s.ios.deployment_target = '12.0'
+  
   s.source_files = 'CommonHelperClasses/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'CommonHelperClasses' => ['CommonHelperClasses/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_version = '5.0'
+  
+  s.requires_arc = true
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  
+  s.dependency 'Alamofire'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'ReachabilitySwift'
+  
+  s.dependency 'IQKeyboardManagerSwift'
+  s.dependency 'SDWebImage'
+  s.dependency 'EzPopup'
+  s.dependency 'NextGrowingTextView'
+  s.dependency 'ActionSheetPicker-3.0'
+  s.dependency 'TextFieldEffects'
+  
 end
